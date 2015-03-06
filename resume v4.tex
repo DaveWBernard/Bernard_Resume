@@ -1,0 +1,317 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+\usepackage{todonotes}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\usepackage{multicol}
+
+\date{} % Remove Date
+
+\usepackage
+[
+        left=4.5cm,
+        right=2cm,
+        top=2cm,
+        bottom=2cm,
+        % use vmargin=2cm to make vertical margins equal to 2cm.
+        % us  hmargin=3cm to make horizontal margins equal to 3cm.
+        % use margin=3cm to make all margins  equal to 3cm.
+]
+{geometry}
+
+%\def\labelitemi{\checkmark}
+%----------------------------------------------------------------------------------------
+\pagestyle{empty} 
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{David Bernard}}\vspace{1.5em} % Your name
+
+\Description{\MarginText{}{\href{mailto:bernardd@uvic.ca}{bernardd@uvic.ca}}\ \ $\cdotp$\ \ (250) 704 6482 }
+
+%\Description{\MarginText{phone}{(250) 704 6482}}
+
+\vspace{1em} % Extra white space between the personal information section and goal
+
+\noindent\spacedlowsmallcaps{Summary}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+\Description{Highly professional \textit{Marine Engineer} with over 12 years of hands on experience serving as a proven leader in the Royal Canadian Navy. Theoretical knowledge and practical experience in various engineering fields including machining, hydraulics, gas turbines, diesel engines, refrigeration, and reverse osmosis desalination. Strong computer skills include CAD, MS Office, and database design. History of positive evaluations describing excellent interpersonal skills as well as superior communication, leadership, and organizational abilities.}
+\vspace{1em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Professional Experience}\vspace{1em}
+
+\NewEntry{2002--Present}{Marine Engineer, \textsc{Royal Canadian Navy}}
+
+\Description{\MarginText{Machine Shop Instructor/ Supervisor}2011-2013\ \ $\cdotp$\ \ Canadian Forces Fleet School Esquimalt (CFFSE) Machine Shop Instructor/Supervisor\vspace{2pt}
+\begin{addmargin}[15pt]{0pt}
+	\begin{itemize} \itemsep0pt
+	\item	Instructed up to 20 students in both a classroom and machine shop, with a high emphasis on safety.
+	\item	Managed machine shop operations, including tool crib staff, other instructors, and equipment.
+	\item	Developed and implemented lesson plans, including practical demonstrations and exams.
+	\item	Designed projects and produced detailed CAD drawings.
+	\item	Developed MS Access database for automated marking of projects.
+	\item	Completed numerous shop improvements, including acquisition and implementation of automated tool crib accountability software.
+	\end{itemize}
+\end{addmargin} \vspace{4pt}
+2002-2011\ \ $\cdotp$\ \ Various Other Positions, including: \vspace{2pt} \newline 
+\MarginText{Engineering Officer of the Watch}Canadian Patrol Frigate Engineering Officer of the Watch \vspace{2pt}
+\begin{addmargin}[15pt]{0pt}
+\begin{itemize} \itemsep0pt
+	\item Responsible for the safe and efficient operation of main machinery of a gas turbine/diesel propelled warship (CODOG) while in charge of the engineering watch.
+	\item Responsible for supervision and safety of on watch personnel.
+	\item Motivated, mentored, and trained junior personnel.
+	\item Planned, coordinated, and conducted preventative and corrective maintenance.
+	\item Diagnosed technical problems, then developed and implemented solutions to maintain/restore operability.
+	\end{itemize}
+	\end{addmargin} \vspace{4pt}
+Fleet Maintenance Facility Cape Breton Shop 182 Maintenance Supervisor/Planner \vspace{2pt}
+\MarginText{Maintenance Supervisor/ Planner}
+\begin{addmargin}[15pt]{0pt}
+\begin{itemize} \itemsep0pt
+		\item	Managed maintenance work groups, including planning, scheduling, and administration.
+		\item	Prioritized, managed, and supervised concurrent maintenance tasks, while ensuring a high standard of work.
+\end{itemize}
+\end{addmargin}
+
+
+}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2013-2018 (anticipated)}{\textsc{University of Victoria}}
+
+\Description{\MarginText{Bachelor of Engineering}GPA: 8.65\ \ $\cdotp$\ \ \textit{Mechanical Engineering}\ \ $\cdotp$\ \ Department of Mechanical Engineering\newline 
+Currently enrolled in 2nd year. Accomplishments include:
+\begin{addmargin}[15pt]{0pt}
+\begin{itemize} \itemsep0pt
+\item 2014\ \ $\cdotp$\ \ Engineering 120 (Robot Design): Finalist
+\item 2014\ \ $\cdotp$\ \ Canadian Engineering Competition (Junior Design Team): Qualifier
+\item 2014\ \ $\cdotp$\ \ Western Engineering Competition (Junior Design Team): 2nd Place
+\item 2013\ \ $\cdotp$\ \ University of Victoria Engineering Competition (Junior Design Team): 1st Place
+\item 2013\ \ $\cdotp$\ \ Engineering 110 (CRD Cycling Project): Winning Design
+\end{itemize}
+\end{addmargin}
+}
+
+
+\newpage
+
+%------------------------------------------------
+
+\NewEntry{2012}{\textsc{Royal Military College of Canada}}
+
+\Description{\MarginText{Royal Military College}Honours Standing\ \ $\cdotp$\ \ \textit{Officer Professional Military Education}\ \ $\cdotp$\ \ Division of Continuing Studies  \newline
+Four courses (200-400 level) covering the following topics: \vspace{-.8em}
+\begin{multicols}{3}
+\begin{itemize} \itemsep0pt
+\item Leadership
+\item Ethics
+\item Psychology
+\item Canadian history
+\item Canadian politics
+\item Military history
+\end{itemize}
+\end{multicols}
+}
+ \vspace{-.8em}
+%\newpage
+%------------------------------------------------
+
+\NewEntry{2002-2004}{\textsc{Memorial University of Newfoundland}}
+
+\Description{\MarginText{Technician Diploma}\textit{Marine Engineering}\ \ $\cdotp$\ \ Fisheries and Marine Institute \newline
+Two year college program. Topics included: \vspace{-.8em}
+\begin{multicols}{2}
+\begin{itemize} \itemsep0pt
+\item Marine engineering knowledge
+\item Workshop hand skills and machining
+\item Electrotechnology
+\item Electronics, instrumentation, and controls
+\item Hydraulics
+\item Thermodynamics
+\item Mechanics
+\item Fluid mechanics
+\end{itemize}
+\end{multicols}
+}
+
+%------------------------------------------------
+
+%\vspace{-.7em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Skills \& Abilities}\vspace{.8em}
+
+\Description{\MarginText{Leadership}\vspace{-2em}
+\begin{itemize} \itemsep0pt
+	\item Adept at employing a variety of leadership styles due to differing roles throughout military career.
+\end{itemize}	
+}
+
+\Description{\MarginText{Teamwork}\vspace{-2em}
+	\begin{itemize}\itemsep0pt
+		\item History of quickly and effectively integrating into diverse teams during short-term postings and maintaining team cohesion during demanding, long-term deployments.
+\end{itemize}		
+}
+
+\Description{\MarginText{Communication}\vspace{-2em}
+	\begin{itemize}\itemsep0pt
+		\item History of producing consistently high quality technical and administrative writing throughout academic and military careers.
+		\item Instructional roles and oral exam board results show comfort with public speaking and ability to clearly convey complex technical concepts.
+	\end{itemize}
+		}
+
+\Description{\MarginText{Dependable}\vspace{-2em}
+	\begin{itemize}\itemsep0pt
+		\item Entrusted with independent, high-responsibility roles such as Engineering Officer of the Watch.
+		\item Performance during high-intensity engineering drills shows the ability to safely and effectively manage concurrent technical problems and emergencies while remaining calm.
+	\end{itemize}
+		}
+
+\newlength{\compbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\compbox}{MS Office} % Length equals the length of "English" - if you have a longer language in your list put it here
+
+\Description{\MarginText{Computer}\parbox{\compbox}{\textsc{CAD}}\ \ $\cdotp$\ \ \ SolidWorks, TurboCAD, AutoCAD, MS Visio}
+
+\vspace{-.8em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\compbox}{\textsc{MS Office}}\ \ $\cdotp$\ \ \ Word, PowerPoint, Excel, Outlook, Access, Visio, Project}
+
+\vspace{-.8em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{\parbox{\compbox}{\textsc{Other}}\ \ $\cdotp$\ \ \ \LaTeX, Microsoft Windows, C, Acrobat}
+
+\vspace{.7em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Certifications \& Qualifications}\vspace{.8em}
+
+
+\Description{\MarginText{Engineering}2011\ \ $\cdotp$\ \ Engineering Officer of the Watch \ \ $\cdotp$\ \ Cert 3E\newline
+\textit{Equivalent to Class 2 Power/Marine Engineer}
+}
+
+%------------------------------------------------
+
+
+\Description{\MarginText{Machining}2011\ \ $\cdotp$\ \ Naval Machinist\ \ $\cdotp$\ \ Top Student	\newline
+\textit{Equivalent to Red Seal Machinist}}
+
+%------------------------------------------------
+
+
+\Description{\MarginText{Leadership}2009\ \ $\cdotp$\ \ Primary Leadership Qualification	\newline
+Formal leadership course. Topics included: \vspace{-.8em}
+\begin{multicols}{3}
+\begin{itemize} \itemsep0pt
+\item Leadership theory
+\item Conflict management
+\item Instructional techniques
+\end{itemize}
+\end{multicols}
+}
+
+%------------------------------------------------
+
+
+
+%------------------------------------------------
+
+
+\Description{\MarginText{Other Qualifications}\vspace{-2.9em}
+\begin{multicols}{2}
+\begin{itemize} \itemsep0pt
+\item	Standard First Aid
+\item	LM2500 Gas Turbine Maintenance
+\item	HRAI – CFC/HCFC/HFC Control (Refrigeration and Air Conditioning)
+\end{itemize}
+\end{multicols}
+}
+
+%\newpage
+%------------------------------------------------
+\vspace{-.3em}
+
+
+\spacedlowsmallcaps{Other}\vspace{.8em}
+
+\Description{\MarginText{Decorations}South-West Asia Service Medal (SWASM)\ \ $\cdotp$\ \ Canadian Forces' Decoration (CD)	
+}
+
+%\vspace{1em}
+
+
+
+
+\Description{\MarginText{Activities}Kiteboarding\ \ $\cdotp$\ \ Camping\ \ $\cdotp$\ \ Cycling\ \ $\cdotp$\ \ Rock Climbing\ \ $\cdotp$\ \ Snowboarding / Skiing\ \ $\cdotp$\ \  Sailing}
+
+\Description{\MarginText{Intrests}Alternative Energy\ \ $\cdotp$\ \ Fabrication\ \ $\cdotp$\ \ Design\ \ $\cdotp$\ \ CAD}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
